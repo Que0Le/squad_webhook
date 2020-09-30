@@ -1,7 +1,11 @@
 import requests #dependency
 import json
+import os
+from dotenv import load_dotenv
 
-url = "https://discordapp.com/api/webhooks/760569574357205062/WxHcBn5TBalcDGg_VCxJDGZnTOZd8z4RbsRtGq120yB7vEcZimoKlYs0d5pt04qZ9nLj" #webhook url, from here: https://i.imgur.com/aT3AThK.png
+load_dotenv()
+
+url = os.getenv('DISCORD_WEBHOOK_URL')
 
 data = {}
 #for all params, see https://discordapp.com/developers/docs/resources/webhook#execute-webhook
