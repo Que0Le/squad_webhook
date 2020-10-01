@@ -2,7 +2,7 @@
 ``` bash
 python -m venv venv
 ./venv/Scripts/Activate.ps1
-python -m pip install python-dotenv discord.py requests
+python -m pip install python-dotenv discord.py requests python-a2s
 ```
 
 # TODO:
@@ -24,11 +24,15 @@ _Voice channels_
     + Trong squad chỉ có 2 người Việt, còn lại là English speaking boys.
     + Squad toàn người Việt nhưng lười bấm "B".
     + Ae chơi ở các squad khác khau (Mortar, Heli, ...) cần Squad leader roll.
-    + Chưa kể dùng voice channel sẽ tiện để mọi người biết ae đang chơi server nào để còn vào chơi cùng.
-    
+    + Chưa kể dùng voice channel sẽ tiện để mọi người biết ae đang chơi server nào để còn vào chơi cùng, hỏi chơi team nào squad nào, unlock squad, invite, ...
+
 _Text channel_ #server-status
 - Một script python sẽ liên tục query những server ae thường chơi để liệt kê những thông tin như Map, Mode, players ... và quan trọng nhất là **liệt kê tên thành viên đang chơi**. Nếu bạn không muốn bị liệt kê bởi Bot này thì chỉ việc nói với Mod để cập nhật.
 
 **Đóng góp ý kiến**:
 - Mọi ý kiến và chỉ trích đều được hoan nghênh. Ae có thể viết trên channel chung hoặc gửi tin nhắn riêng.
 - Chúng tôi đang cần tham khảo ý kiến phát triển server Discord: Thêm channel, thêm chức năng, Bot, ...
+
+
+**Note**
+- Mute #server-status vì trong đó Bot sẽ post thông tin tự động.

@@ -14,13 +14,17 @@
         {"address": "194.26.183.165", "game_port": "", "stat_port": "27167", "name": "★★★ SQUADeinander Germany ★ RAAS & INV ★★★ by FC-"},
         {"address": "116.202.242.48", "game_port": "", "stat_port": "27165", "name": "[MAD] -Make A Difference- [ENG][EU]#1"},
         {"address": "217.79.189.180", "game_port": "", "stat_port": "27165", "name": "[GER/EN][2]>>BrC<< Born Rebels Squad Server New Players welcome"},
+        {"address": "103.131.188.44", "game_port": "", "stat_port": "7800", "name": "[SFW]Kentino's Maple Syrup[SG|SEA]"},
+        {"address": "103.131.188.44", "game_port": "", "stat_port": "9800", "name": "[SFW]Kentino's Maple Tree[SG|SEA]"},
         {"address": "178.63.42.181", "game_port": "", "stat_port": "27022", "name": "★★ Squad Skandinavia ★★ [EU/NOR] Powered by the Allianc"},
         {"address": "185.248.141.157", "game_port": "", "stat_port": "27023", "name": "✯ ✯ ✯ [TB] Tactical Battalion ✯ ✯ ✯"},
         {"address": "185.38.149.109", "game_port": "", "stat_port": "27022", "name": "[TLR] - The Last Rifles Gaming [EU/ENG]"},
         {"address": "185.38.149.110", "game_port": "", "stat_port": "27062", "name": "RB | Royal Battalion [ENG]"},
-        {"address": "185.38.149.32", "game_port": "", "stat_port": "27032", "name": "Squad+ | Home of Experienced Players"},
+        {"address": "185.38.151.31", "game_port": "", "stat_port": "27032", "name": "Squad+ | Home of Experienced Players"},
         {"address": "185.38.151.16", "game_port": "", "stat_port": "27165", "name": "Fear and Terror #3 | New Player Friendly | EU"},
         {"address": "213.32.112.184", "game_port": "", "stat_port": "27165", "name": "[RIP] Rusty In Places UK/EU [ENG] Sq#1"},
-        {"address": "185.38.151.31", "game_port": "", "stat_port": "27042", "name": "[IMC] International Militia Corps UK/EU- Heli Focus"}
+        {"address": "185.38.151.31", "game_port": "", "stat_port": "27042", "name": "[IMC] International Militia Corps UK/EU- Heli Focus"},
+        {"address": "118.37.220.176", "game_port": "", "stat_port": "27165", "name": "=KSC= West Pacific Tactical 24/7 #1 (Heli,RAAS,CAF,TANK)"},
+        {"address": "104.238.220.175", "game_port": "", "stat_port": "27022 ", "name": "[HiveMind] West Coast - All Game Modes"}
     ]
 }
