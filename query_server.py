@@ -141,6 +141,6 @@ with open("log.txt", mode="a", encoding="utf-8") as f:
                 print("Payload delivered successfully, code {}.".format(result.status_code))
             time.sleep(5)
         print("Sleeping ...")
-        time.sleep(30)
+        time.sleep(300)
 
 

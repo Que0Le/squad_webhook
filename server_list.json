@@ -23,6 +23,11 @@
         {"address": "185.38.151.31", "game_port": "", "stat_port": "27032", "name": "Squad+ | Home of Experienced Players"},
         {"address": "185.38.151.16", "game_port": "", "stat_port": "27165", "name": "Fear and Terror #3 | New Player Friendly | EU"},
         {"address": "213.32.112.184", "game_port": "", "stat_port": "27165", "name": "[RIP] Rusty In Places UK/EU [ENG] Sq#1"},
+        {"address": "118.127.15.52", "game_port": "", "stat_port": "27265", "name": "[AU] ZSU Gaming Squad #1"},
+        {"address": "118.127.15.52", "game_port": "", "stat_port": "27275", "name": "[AU] ZSU Gaming Squad #2 - AAS/RAAS Only"},
+        {"address": "118.127.15.52", "game_port": "", "stat_port": "27285", "name": "[AU] ZSU Gaming Squad #3"},
+        {"address": "139.99.144.165", "game_port": "", "stat_port": "27165", "name": "[AU] ZSU Gaming Squad #4"},
+        {"address": "118.127.15.52", "game_port": "", "stat_port": "27305", "name": "[AU] ZSU Gaming Squad #5"},
         {"address": "185.38.151.31", "game_port": "", "stat_port": "27042", "name": "[IMC] International Militia Corps UK/EU- Heli Focus"},
         {"address": "118.37.220.176", "game_port": "", "stat_port": "27165", "name": "=KSC= West Pacific Tactical 24/7 #1 (Heli,RAAS,CAF,TANK)"},
         {"address": "104.238.220.175", "game_port": "", "stat_port": "27022 ", "name": "[HiveMind] West Coast - All Game Modes"}
