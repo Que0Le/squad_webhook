@@ -8,13 +8,20 @@ import requests #dependency
 import json
 import os
 from dotenv import load_dotenv
+import json
 
+### Get list of members
+members = []
+with open("member_list.json", "r", encoding="utf8") as f:
+    data=f.read()
+    obj = json.loads(data)
+    for mem in obj["members"]:
+        members.append(mem['nick_name'])
+print(members)
 
+### Get discord token:
 load_dotenv()
 url = os.getenv('DISCORD_WEBHOOK_URL')
-
-address = ("194.26.183.101", 27165)
-address = ("145.239.131.137", 27165)    # [FR] Teamwork Francophone [P²]
 
 addresses = [
     ("145.239.131.137", 27165),    # [FR] Teamwork Francophone [P²]
@@ -42,7 +49,6 @@ addresses = [
     ("185.38.151.31", 27042 ), #	[IMC] International Militia Corps UK/EU- Heli Focus - https://d
     # ("", 27165), #
     # ("", 27165), #
-    # ("", 27165), #
 ]
 
 # print(a2s.info(("185.38.149.109", 27022 )))
@@ -62,10 +68,10 @@ con.execute(f"CREATE TABLE IF NOT EXISTS {tablename}(\
     play_duration REAL,\
     query_time timestamp)")
 
-our_players = ["RazorBarrett", "SÀI GÒN PN", "L'Aigle De Médine", "kylar Stern", "PHX-Eliii54"]
-
 with open("log.txt", mode="a", encoding="utf-8") as f:
+    bot = 0
     while(1):
+        bot += 1
         ser_infs = []
         for a in addresses:
             try:
@@ -78,7 +84,7 @@ with open("log.txt", mode="a", encoding="utf-8") as f:
                 our_players_in_server = []
                 for player in players:
                     data.append((None, server_infor.server_name, server_infor.map_name, server_infor.player_count, server_infor.max_players, player.name, player.score, player.duration, now))
-                    if player.name in our_players:
+                    if player.name in members:
                         our_players_in_server.append((player.name, player.duration))
 
                 query = f"insert into {tablename}\
@@ -99,7 +105,7 @@ with open("log.txt", mode="a", encoding="utf-8") as f:
         # Preparing data to send to Discord
         data = {}
         #for all params, see https://discordapp.com/developers/docs/resources/webhook#execute-webhook
-        data["username"] = "__EU_Bot"
+        data["username"] = "__EU_Bot_" + str(bot%2)
 
         #leave this out if you dont want an embed
         # data["embeds"] = []
@@ -136,6 +142,6 @@ with open("log.txt", mode="a", encoding="utf-8") as f:
             time.sleep(5)
         print("Sleeping ...")
         # exit()
-        time.sleep(100)
+        time.sleep(30)
 
 
