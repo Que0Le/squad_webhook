@@ -8,48 +8,39 @@ import requests #dependency
 import json
 import os
 from dotenv import load_dotenv
-import json
 
-### Get list of members
-members = []
-with open("member_list.json", "r", encoding="utf8") as f:
-    data=f.read()
-    obj = json.loads(data)
-    for mem in obj["members"]:
-        members.append(mem['nick_name'])
-print(members)
+
 
 ### Get discord token:
 load_dotenv()
 url = os.getenv('DISCORD_WEBHOOK_URL')
 
-addresses = [
-    ("145.239.131.137", 27165),    # [FR] Teamwork Francophone [P²]
-    ("46.4.96.25", 27165), #	[PA] Project Awesome #1 | New Player Friendly | ENG
-    ("88.99.69.190", 27165), #	[FM] Full Metal | New Players Welcome | Teamwork | ENG/EU
-    ("194.26.183.84", 27020 ), #	We ♥ Squad Germany 1
-    ("194.26.183.83", 27020 ), #	We ♥ Squad Germany 2
-    ("194.26.183.164", 27165), #	★★★ SQUAD EUROPE ★ Mapvote & Stats ★★★ by JoinSqu
-    ("194.26.183.179", 27165), #	[BoB] German Band of Bastards Server
-    ("148.251.6.84", 27165), #		[SR] SMOKING RIFLES - EU SERVER (ENG)	
-    ("194.26.183.101", 27165), #	+++ Deutsche Squad Gemeinschaft +++ DSG | GER
-    ("194.26.183.5", 27165), #	[SoS] Squad on Sunday | New Player Friendly | ENG
-    ("194.26.183.26", 27165), #	[GER/ENG] Publicserver #1 by Squadified | 3.A, SOE, GTK & GaG
-    ("194.26.183.165", 27167), #	★★★ SQUADeinander Germany ★ RAAS & INV ★★★ by FC-
-    ("116.202.242.48", 27165), #	[MAD] -Make A Difference- [ENG][EU]#1
-    ("217.79.189.180", 27165), #	[GER/EN][2]>>BrC<< Born Rebels Squad Server New Players welcome
-    ("178.63.42.181", 27022 ), #	★★ Squad Skandinavia ★★ [EU/NOR] Powered by the Allianc
-    ("116.202.242.48", 27165), #	[MAD] -Make A Difference- [ENG][EU]#2
-    ("185.248.141.157", 27023 ), #	✯ ✯ ✯ [TB] Tactical Battalion ✯ ✯ ✯
-    ("185.38.149.109", 27022 ), # 	[TLR] - The Last Rifles Gaming [EU/ENG]
-    ("185.38.149.110", 27062 ), #	RB | Royal Battalion [ENG] discord: https://discord.gg/zhbMJvc
-    ("185.38.149.32", 27032 ), #	Squad+ | Home of Experienced Players | discord.io/SquadPlus
-    ("185.38.151.16", 27165), #	Fear and Terror #3 | New Player Friendly | EU
-    ("213.32.112.184", 27165), #	[RIP] Rusty In Places UK/EU [ENG] Sq#1
-    ("185.38.151.31", 27042 ), #	[IMC] International Militia Corps UK/EU- Heli Focus - https://d
-    # ("", 27165), #
-    # ("", 27165), #
-]
+# addresses = [
+#     ("145.239.131.137", 27165),    # [FR] Teamwork Francophone [P²]
+#     ("46.4.96.25", 27165), #	[PA] Project Awesome #1 | New Player Friendly | ENG
+#     ("88.99.69.190", 27165), #	[FM] Full Metal | New Players Welcome | Teamwork | ENG/EU
+#     ("194.26.183.84", 27020 ), #	We ♥ Squad Germany 1
+#     ("194.26.183.83", 27020 ), #	We ♥ Squad Germany 2
+#     ("194.26.183.164", 27165), #	★★★ SQUAD EUROPE ★ Mapvote & Stats ★★★ by JoinSqu
+#     ("194.26.183.179", 27165), #	[BoB] German Band of Bastards Server
+#     ("148.251.6.84", 27165), #		[SR] SMOKING RIFLES - EU SERVER (ENG)	
+#     ("194.26.183.101", 27165), #	+++ Deutsche Squad Gemeinschaft +++ DSG | GER
+#     ("194.26.183.5", 27165), #	[SoS] Squad on Sunday | New Player Friendly | ENG
+#     ("194.26.183.26", 27165), #	[GER/ENG] Publicserver #1 by Squadified | 3.A, SOE, GTK & GaG
+#     ("194.26.183.165", 27167), #	★★★ SQUADeinander Germany ★ RAAS & INV ★★★ by FC-
+#     ("116.202.242.48", 27165), #	[MAD] -Make A Difference- [ENG][EU]#1
+#     ("217.79.189.180", 27165), #	[GER/EN][2]>>BrC<< Born Rebels Squad Server New Players welcome
+#     ("178.63.42.181", 27022 ), #	★★ Squad Skandinavia ★★ [EU/NOR] Powered by the Allianc
+#     ("185.248.141.157", 27023 ), #	✯ ✯ ✯ [TB] Tactical Battalion ✯ ✯ ✯
+#     ("185.38.149.109", 27022 ), # 	[TLR] - The Last Rifles Gaming [EU/ENG]
+#     ("185.38.149.110", 27062 ), #	RB | Royal Battalion [ENG] discord: https://discord.gg/zhbMJvc
+#     ("185.38.149.32", 27032 ), #	Squad+ | Home of Experienced Players | discord.io/SquadPlus
+#     ("185.38.151.16", 27165), #	Fear and Terror #3 | New Player Friendly | EU
+#     ("213.32.112.184", 27165), #	[RIP] Rusty In Places UK/EU [ENG] Sq#1
+#     ("185.38.151.31", 27042 ), #	[IMC] International Militia Corps UK/EU- Heli Focus - https://d
+#     # ("", 27165), #
+#     # ("", 27165), #
+# ]
 
 # print(a2s.info(("185.38.149.109", 27022 )))
 # print(a2s.players(("145.239.131.137", 27165)))
@@ -72,11 +63,27 @@ with open("log.txt", mode="a", encoding="utf-8") as f:
     bot = 0
     while(1):
         bot += 1
+        ### Get list of members
+        members = []
+        with open("member_list.json", "r", encoding="utf8") as f1:
+            data1=f1.read()
+            obj1 = json.loads(data1)
+            for mem in obj1["members"]:
+                members.append(mem['nick_name'])
+        print(members)
+        ### Get server list::
+        addresses = []
+        with open("server_list.json", "r", encoding="utf8") as f2:
+            data2=f2.read()
+            obj2 = json.loads(data2)
+            for ser in obj2["server_list"]:
+                addresses.append((ser['address'], int(ser['stat_port'])))
+        print(addresses)
+
         ser_infs = []
         for a in addresses:
             try:
                 print("Pulling " + str(a))
-                #print(a2s.players(a), file=f)
                 players = a2s.players(a)
                 server_infor = a2s.info(a)#.server_name
                 now = datetime.now()
@@ -104,14 +111,7 @@ with open("log.txt", mode="a", encoding="utf-8") as f:
 
         # Preparing data to send to Discord
         data = {}
-        #for all params, see https://discordapp.com/developers/docs/resources/webhook#execute-webhook
         data["username"] = "__EU_Bot_" + str(bot%2)
-
-        #leave this out if you dont want an embed
-        # data["embeds"] = []
-        # embed = {}
-        #for all params, see https://discordapp.com/developers/docs/resources/channel#embed-object
-        # embed["title"] = "Server name, IP, Port, Map, Player/Slot, Members in server"
 
         # Text coloring: https://www.writebots.com/discord-text-formatting/
         desc = "\n\n#######################################################################################\nFetching data from EU server:\n"
@@ -141,7 +141,6 @@ with open("log.txt", mode="a", encoding="utf-8") as f:
                 print("Payload delivered successfully, code {}.".format(result.status_code))
             time.sleep(5)
         print("Sleeping ...")
-        # exit()
         time.sleep(30)
 
 

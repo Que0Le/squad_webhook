@@ -1,0 +1,26 @@
+{
+    "server_list": [
+        {"address": "145.239.131.137", "game_port": "", "stat_port": "27165", "name": "[FR] Teamwork Francophone [P²]"},
+        {"address": "46.4.96.25", "game_port": "", "stat_port": "27165", "name": "[PA] Project Awesome #1 | New Player Friendly | ENG"},
+        {"address": "88.99.69.190", "game_port": "", "stat_port": "27165", "name": "[FM] Full Metal | New Players Welcome | Teamwork | ENG/EU"},
+        {"address": "194.26.183.84", "game_port": "", "stat_port": "27020", "name": "We ♥ Squad Germany 1"},
+        {"address": "194.26.183.83", "game_port": "", "stat_port": "27020", "name": "We ♥ Squad Germany 2"},
+        {"address": "194.26.183.164", "game_port": "", "stat_port": "27165", "name": "★★★ SQUAD EUROPE ★ Mapvote & Stats ★★★ by JoinSqu"},
+        {"address": "194.26.183.179", "game_port": "", "stat_port": "27165", "name": "[BoB] German Band of Bastards Server"},
+        {"address": "148.251.6.84", "game_port": "", "stat_port": "27165", "name": "[SR] SMOKING RIFLES - EU SERVER (ENG)"},
+        {"address": "194.26.183.101", "game_port": "", "stat_port": "27165", "name": "+++ Deutsche Squad Gemeinschaft +++ DSG | GER"},
+        {"address": "194.26.183.5", "game_port": "", "stat_port": "27165", "name": "[SoS] Squad on Sunday | New Player Friendly | ENG"},
+        {"address": "194.26.183.26", "game_port": "", "stat_port": "27165", "name": "[GER/ENG] Publicserver #1 by Squadified | 3.A, SOE, GTK & GaG"},
+        {"address": "194.26.183.165", "game_port": "", "stat_port": "27167", "name": "★★★ SQUADeinander Germany ★ RAAS & INV ★★★ by FC-"},
+        {"address": "116.202.242.48", "game_port": "", "stat_port": "27165", "name": "[MAD] -Make A Difference- [ENG][EU]#1"},
+        {"address": "217.79.189.180", "game_port": "", "stat_port": "27165", "name": "[GER/EN][2]>>BrC<< Born Rebels Squad Server New Players welcome"},
+        {"address": "178.63.42.181", "game_port": "", "stat_port": "27022", "name": "★★ Squad Skandinavia ★★ [EU/NOR] Powered by the Allianc"},
+        {"address": "185.248.141.157", "game_port": "", "stat_port": "27023", "name": "✯ ✯ ✯ [TB] Tactical Battalion ✯ ✯ ✯"},
+        {"address": "185.38.149.109", "game_port": "", "stat_port": "27022", "name": "[TLR] - The Last Rifles Gaming [EU/ENG]"},
+        {"address": "185.38.149.110", "game_port": "", "stat_port": "27062", "name": "RB | Royal Battalion [ENG]"},
+        {"address": "185.38.149.32", "game_port": "", "stat_port": "27032", "name": "Squad+ | Home of Experienced Players"},
+        {"address": "185.38.151.16", "game_port": "", "stat_port": "27165", "name": "Fear and Terror #3 | New Player Friendly | EU"},
+        {"address": "213.32.112.184", "game_port": "", "stat_port": "27165", "name": "[RIP] Rusty In Places UK/EU [ENG] Sq#1"},
+        {"address": "185.38.151.31", "game_port": "", "stat_port": "27042", "name": "[IMC] International Militia Corps UK/EU- Heli Focus"}
+    ]
+}
