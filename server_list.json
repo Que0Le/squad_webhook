@@ -28,8 +28,10 @@
         {"address": "118.127.15.52", "game_port": "", "stat_port": "27285", "name": "[AU] ZSU Gaming Squad #3"},
         {"address": "139.99.144.165", "game_port": "", "stat_port": "27165", "name": "[AU] ZSU Gaming Squad #4"},
         {"address": "118.127.15.52", "game_port": "", "stat_port": "27305", "name": "[AU] ZSU Gaming Squad #5"},
+        {"address": "116.202.228.244", "game_port": "", "stat_port": "27165", "name": "[1stAL] 1st Armoured Legion UK/EU 'Valhalla'"},
         {"address": "185.38.151.31", "game_port": "", "stat_port": "27042", "name": "[IMC] International Militia Corps UK/EU- Heli Focus"},
         {"address": "118.37.220.176", "game_port": "", "stat_port": "27165", "name": "=KSC= West Pacific Tactical 24/7 #1 (Heli,RAAS,CAF,TANK)"},
+        {"address": "82.64.124.13", "game_port": "", "stat_port": "27168", "name": "[CI] Corrupted Infantry | New Player/Teamwork Friendly | EU/ENG"},
         {"address": "104.238.220.175", "game_port": "", "stat_port": "27022 ", "name": "[HiveMind] West Coast - All Game Modes"}
     ]
 }
